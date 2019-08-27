@@ -1,0 +1,906 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.link-primary {
+    margin-left: 0px;
+}
+
+.link-primary, .link-primary:visited, .contactDepartment a, .resources a, .contactDepartment a:visited, .resources a:visited, .a-z a, .a-z a:visited, .a-z a p, .list--list-item .titleLink {
+    color: #4b7be1;
+    text-decoration: none;
+}
+
+a.titleLink:hover {
+    text-decoration: underline;
+}
+
+/* Disclaimer/source for SeekUT data */
+p.disclaimer {
+    font-size: .8rem;
+    color: #888;
+    margin: 2em 0;
+}
+p.disclaimer a {
+    color: #888;
+}
+
+h3 .disclaimer-star {
+    font-size: 0.8rem;
+    position: relative;
+    top: -5px;
+    color: #888
+}
+
+.a-z a p {
+    font-size: 1em;
+}
+
+.a-z--list-item {
+    margin-bottom: .75em;
+}
+
+a:hover, .subhead a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .page--majors p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .page--majors li {
+      color: #555;
+  }
+  
+.page--major .row .row .columns {
+    padding: 0;
+}
+  
+.hero-title p {
+    color: #bbdefb;
+}
+
+  .subhead, .subhead a, .subhead a:visited, p.subhead {
+      color: #bbdefb;
+      font-family: 'Roboto Slab', Rockwell, serif;
+      font-weight: normal;
+      text-decoration: none;
+      font-size: .85rem;
+      letter-spacing: 1px;
+  }
+
+  h5 {
+      color: #000;
+      text-transform: initial;
+      font-weight: bold;
+  }
+
+  .mobile-only {
+      display: none;
+  }
+  
+  .applyRequest .btn {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  
+  .btn {
+      text-align: center;
+  }
+  
+  .btn-secondary, .btn-secondary:visited {
+      color: #e57126;
+  }
+  
+  .btn-secondary:hover {
+      color: #fff;
+  }
+
+  .btn-secondary-alt {
+      border: 1px solid #427fec;
+      color: #427fec;
+  }
+  .s-blue h1 {
+      color: #fff;
+      font-family: 'Roboto Slab', Rockwell, serif;
+      font-weight: normal;
+      line-height: 1.1;
+      margin: 20px 0px;
+      font-size: 3rem;
+      /*text-shadow: 1px 1px 15px rgba(0,0,0,.6);*/
+  }
+/* Preloader */
+
+.major-listings {
+    position: relative;
+    padding-left: 0.9375em;
+}
+
+#preloader {
+    position: absolute;
+    background-color: #fff;
+    z-index: 99;
+    display: block;
+    display: block;
+    min-height: 500px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 250px;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+
+/* A-Z Index Styles */
+
+.a-z ul, .list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.a-z ul {
+    margin-top: 1.25em;
+}
+
+.a-z .splitter {
+    border-bottom: 1px solid #e0e1e2;
+    /*padding-top: 50px;*/
+    margin-top: 4.5rem;
+    margin-bottom: 1.2em;
+}
+
+.a-z .splitter:first-child {
+    padding-top: 0px;
+    margin-top: 0;
+}
+
+/* List Styles */
+
+  .list--list-item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e1e2;
+    font-size: 1rem;
+  }
+
+  /* List Item Styles */
+
+    a.titleLink {
+        font-size: 1.2rem;
+    }
+
+  .college-icon {
+      background: url(../_images/content/academics-majors/icon-college.svg) no-repeat center center;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      margin-right: 8px;
+      margin-bottom: -2px;
+  }
+
+  .schoolName {
+      text-transform: uppercase;
+      font-family: 'Roboto Slab', Rockwell, serif;
+      font-size: 12px;
+      font-weight: bold;
+      color: #808080;
+  }
+
+  /* Search Field Styles*/
+  .search-field {
+      background: white;
+      border-radius: 2px;
+  }
+  
+  .search-field form {
+      height: 40px;
+  }
+
+  .search-field img {
+      height: 40px;
+      margin: 0px;
+      padding: 10px 13px;
+      display: inline-block;
+  }
+
+  .search-bar {
+      display: inline-block;
+      border: none;
+      height: 40px;
+      border-radius: 2px;
+      border-top-left-radius: 0px;
+      border-top-bottom-radius: 0px;
+      width: 88%;
+      padding: 0px 0px 0px 10px;
+      margin: 0px;
+  }
+
+  .search-bar:focus {
+      outline: none;
+  }
+  .search-field input[type="image"] {
+    width: 40px;
+    height: 40px;
+    background-color: #e57126;
+    padding: 11px;
+    float: right;
+    border-radius: 2px;
+  }
+      
+
+  /* Filter Styles */
+  .major-filters {
+      border: 1px solid #e0e1e2;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+  }
+
+  .major-filters .form-group {
+      border-top: 1px solid #e0e1e2;
+      margin-top: 20px;
+  }
+
+  .form-group {
+      overflow: hidden;
+      width: 100%;
+  }
+
+  .form-group label {
+      margin: 20px 0px 0px;
+      color: #555;
+      float: left;
+      clear: left;
+      font-size: 15px;
+  }
+
+  input.filter {
+      margin-right: 8px;
+  }
+
+  .degreeLevels {
+      float: right;
+
+  }
+  
+  .degreeLevels span {
+    text-transform: uppercase;
+    background: #f0f0f0;
+    padding: 3px 10px;
+    margin: 0px 2px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-family: 'Roboto Slab', Rockwell, serif;
+  }
+
+  .clear-filters {
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+    margin: 0px;
+    font-size: 14px;
+  }
+
+  .clear-filters:focus {
+      outline: none;
+  }
+  
+  .no-result {
+    text-align: center;
+    padding: 5em 0;
+    display: none;
+  }
+
+  /* Accordion styles */
+  .accordion {
+    width: 100%;
+    max-width: 360px;
+    padding: 0px;
+    background: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin: 10px 0px;
+  }
+
+  .accordion .accordionList {
+    cursor: pointer;
+    display: block;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 20px;
+  }
+
+  .accordion li {
+    margin: 20px 0px;
+  }
+
+  .accordion .arrow-down {
+      background: url(../_images/content/academics-majors/icon-open.svg) no-repeat center center;
+      width: 15px;
+      height: 8px;
+      float: right;
+      margin-top: 5px;
+      
+  }
+
+  .accordion .open .arrow-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .submenu {
+    border-top: 1px solid #CCC;
+    font-size: 14px;
+    list-style: none;
+    margin: 0px 20px;
+    padding: 0px;
+  }
+
+  .degree, .school, .contactDepartment, .resources {
+    margin-bottom: 20px;
+    border: 1px solid #e0e1e2;
+    border-radius: 3px;
+  }
+
+/* Page Counter */
+.page-counter {
+    width: fit-content;
+    float: left;
+    line-height: 35px;
+}
+
+  /* Pagination */
+
+  .pagination {
+      float: right;
+  }
+
+  .pagination>li {
+      float: left;
+      text-align: center;
+      padding: 3px 0px;
+      border: 1px solid #e0e1e2;
+      border-radius: 3px;
+      list-style: none;
+      width: 35px;
+      height: 35px;
+      margin-left: 4px;
+  }
+
+  .pagination>li>a {
+      text-decoration: none;
+      color: #555;
+  }
+  
+  .pagination li.disabled {
+      border: none;
+      line-height: 18px;
+  }
+
+  li.active, .pagination li:hover {
+      border: 1px solid black;
+  }
+
+  /* Other Resources */
+  .majors-index {
+      background: url(../_images/content/academics-majors/icon-az.svg) no-repeat center center;
+  }
+
+  .majors-online {
+      background: url(../_images/content/academics-majors/icon-online.svg) no-repeat center center;
+  }
+
+  .majors-certificates {
+      background: url(../_images/content/academics-majors/icon-certificates.svg) no-repeat center center;
+  }
+
+  .majors-catalog {
+      background: url(../_images/content/academics-majors/icon-catalog.svg) no-repeat center center;
+  }
+
+  .majors-index, .majors-online, .majors-certificates, .majors-catalog {
+      height: 30px;
+      margin: 0px auto 20px;
+      display: block;
+  }
+
+  .s-grey {
+      padding: 50px 0px !important;
+  }
+
+  .s-grey a, .s-grey a:visited, .s-grey a:active {
+      text-decoration: none;
+      color: #4b7be1 !important;
+      font-family: 'Roboto Slab', Rockwell, serif;
+  }
+  
+  .s-grey .row a:not(.s-other-resources a) {
+      font-size: .85rem;
+  }
+  
+  .s-grey a:hover {
+      text-decoration: underline;
+  }
+
+  .s-grey h1 {
+      margin-bottom: 75px;
+  }
+  
+  .s-grey h2 {
+      font-size: 1.3em;
+  }
+
+  .s-grey h3 {
+    color: #4b7be1;
+    margin-top: 0px;
+  }
+
+  .s-grey h1, .s-grey h3 {
+      width: 100%;
+      font-weight: 100;
+      text-align: center;
+      font-family: 'Roboto Slab', Rockwell, serif;
+  }
+  
+.s-grey .right {
+    font-size: .85rem;
+    letter-spacing: 1px;
+    margin-top: .85em;
+    font-weight: bold;
+}
+
+
+  /* Higlighting */
+  .highlight {
+    background-color: #fff34d;
+    -moz-border-radius: 5px; /* FF1+ */
+    -webkit-border-radius: 5px; /* Saf3-4 */
+    border-radius: 5px; /* Opera 10.5, IE 9, Saf5, Chrome */
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* FF3.5+ */
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Saf3.0+, Chrome */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Opera 10.5+, IE 9.0 */
+  }
+
+  .highlight {
+    padding:1px 4px;
+    margin:0 -4px;
+  }
+  
+/* Popup Styles for Mobile */
+
+#mobile-filters-menu {
+    overflow: hidden;
+    padding-left: 0px;
+}
+
+/* Swiper Slider Styles */
+.swiper-slide h3 {
+    text-align: left;
+}
+
+.swiper-slider .title {
+    font-size: 1.6rem !important;
+}
+
+.s-grey {
+    overflow:hidden;
+}
+
+.swiper-container {
+    width: auto;
+    height: auto;
+    margin: 20px -20px 0;
+    overflow: hidden;
+    padding: 0 20px 20px;
+}
+.swiper-slide {
+    text-align: left;
+    font-size: 16px;
+    background: #fff;
+    height: 200px;
+    height: auto;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 20px rgba(0,0,0,0.17);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    text-decoration: none;
+    padding: 30px 20px 40px;
+
+    /* Center slide text vertically */
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+
+.swiper-slide:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.25), 0 15px 12px rgba(0,0,0,0.17);
+}
+
+.swiper-slide .title {
+    font-size: 20px !important;
+    margin-bottom: 8px;
+}
+
+.swiper-slide .degreeLevels {
+    position: absolute;
+    bottom: 0;
+}
+.swiper-slide .degreeLevels span {
+    font-size: 0.85rem;
+    margin: 0px 5px 0px 0px;
+}
+
+.mfp-content {
+    background: #fff;
+    top: 0;
+    width: 100vw;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.mfp-container {
+    padding: 0px;
+}
+
+#mobile-filters-menu .mfp-close {
+    border: 1px solid #427fec;
+    border-radius: 3px;
+    color: #427fec;
+    font-size: 12px;
+    font-family: 'Roboto Slab', Rockwell, serif;
+    font-weight: bold;
+    opacity: 1;
+    right: .9375rem;
+    width: auto;
+    height: 35px;
+    line-height: 32px;
+    padding: 0px 10px;
+    margin-top: 20px;
+    display: none;
+}
+
+#mobile-filters-menu .mfp-close:hover {
+    background: #427fec;
+    color: #fff;
+    
+}
+
+.mfp-wrap {
+    background: #fff;
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+
+/* Major Page Styles */
+
+.major-section {
+    margin-top: 50px;
+}
+
+.major-section p.subhead {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.major-section h2 {
+    margin-bottom: 0.1em;
+}
+
+@media all and (max-width: 1089px) and (min-width: 820px) {
+    .search-bar{
+        width: 83%;
+    }
+}
+
+@media all and (max-width: 819px) and (min-width: 760px) {
+    .search-bar {
+        width: 82%;
+    }   
+}
+
+@media all and (min-width: 759px) {
+
+  /* Base Styles */
+
+  .section {
+      padding: 70px 0px;
+  }
+
+  .hero-cta {
+      display: flex;
+      align-items: center;
+      margin-top: 2.5em;
+  }
+  
+  /* Filters */
+  
+  .desktop-only {
+      display: block !important;
+  }
+  
+  .courses-columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+  }
+  
+  /* Swiper Slider */
+    .swiper-pagination {
+        display: none;    
+    }
+    
+    .page-counter {
+        padding-left: 0.9375rem;
+    }
+}
+
+@media all and (max-width: 759px) {
+    .s-blue h1, h1 {
+        font-size: 2.25rem;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .mobile-none {
+        display: none !important;
+    }
+    
+    .section {
+        padding: 30px 0px 0px;
+    }
+    
+    .section h2 {
+        margin: 0px 0px 0.15em;
+    }
+    
+    .section h3 {
+        font-size: 23px;
+    }
+    
+    .hero-cta {
+        min-height: 60px;
+    }
+    
+    .hero-title p:last-child {
+        display: none;
+    }
+    
+    .list--list-item {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    .titleLink {
+        display: flex;
+        flex-direction: row;
+        order: 2;
+    }
+    .description {
+        display: flex;
+        flex-direction: row;
+        order: 3;
+        font-size: 1rem;
+    }
+    .degreeLevels {
+        display: flex;
+        flex-direction: row;
+        order: 4;
+    }
+    .schoolName {
+        display: flex;
+        flex-direction: row;
+        order: 1;
+        height: 18px;
+    }
+    .s-request-apply {
+        padding: 15px 0px;
+    }
+    .major-listings {
+        border-top: 1px solid #e0e1e2;
+        margin-top: 10px;
+        padding: 20px 0px 0px;
+    }
+    .majors-index, .majors-online, .majors-certificates, .majors-catalog {
+        float: left;
+        margin: 0px 30px 30px 0px;
+        height: 25px;
+        width: 25px;
+    }
+    
+    .s-grey {
+        padding: 30px 0px !important;
+    }
+
+    .s-grey h1,
+    .s-grey h3 {
+        text-align: left;
+    }
+    
+    .s-grey h1 {
+        margin-bottom: 30px;
+    }
+    
+    .s-grey h2 {
+        font-size: 1.5rem;
+        max-width: 70%;
+    }
+    
+    .pagination-wrapper {
+        display: flex;
+    }
+    .pagination {
+        margin: auto;
+    }
+    .search-bar {
+        width: 85%;
+    }
+    .white-popup h2 {
+        padding: 0px 20px;
+        color: #000;
+    }
+    .accordion {
+        max-width: inherit;
+        margin: 0px;
+    }
+    .degree-badge {
+        font-size: 12px;
+    }
+    
+    /* Major Page Styles */
+    .applyRequest {
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        background: #fff;
+        padding: 10px 0;
+        border-top: 1px solid #e0e1e2;
+        z-index: 99;
+    }
+    
+    .applyRequest .btn {
+        margin: 0;
+      }
+    
+    .page--major .row.applyRequest .columns:last-child {
+        padding-right: 0.9375rem;
+        padding-left: 0.45rem;
+    }
+    
+    .page--major .row.applyRequest .columns:first-child {
+        padding-left: 0.9375rem;
+        padding-right: 0.45rem;
+    }
+    
+    .swiper-pagination {
+        position: relative;
+        margin-top: 10px;
+    }
+    
+    .swiper-pagination-bullet {
+        margin: 0px 3px;
+    }
+    
+    .college-icon, .schoolName {
+        float: left;
+    }
+    
+    .college-icon {
+        padding-top: 2px;
+    }
+    
+    .page-counter {
+        line-height: 40px;
+        margin: 0px;
+    }
+    
+    .s-grey a, .s-grey a:visited, .s-grey a:active {
+        font-size: .85rem;
+    }
+    
+    .major-section {
+        margin-top: 35px;
+    }
+    
+    .subhead {
+        font-size: 12px !important;
+    }
+    
+    #final-footer {
+        margin-bottom: 66px;
+    }
+    #totop-arrow {
+        bottom: 75px;
+    }
+    
+    #mobile-filters-menu {
+        padding-left: .9375rem;
+    }
+    
+    #mobile-filters-menu .mfp-close {
+        display: block;
+    }
+    .major-section:last-child, .a-z--list-item:last-child {
+        margin-bottom: 40px;
+    }
+    .courses-columns ul {
+        margin: 0px;
+    }
+}
