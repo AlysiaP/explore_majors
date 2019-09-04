@@ -195,7 +195,7 @@ a:hover, .subhead a:hover {
     }
 
   .college-icon {
-      background: url(../_images/content/academics-majors/icon-college.svg) no-repeat center center;
+      background: url(../_images/icon-college.svg) no-repeat center center;
       width: 15px;
       height: 15px;
       display: inline-block;
@@ -348,7 +348,7 @@ a:hover, .subhead a:hover {
   }
 
   .accordion .arrow-down {
-      background: url(../_images/content/academics-majors/icon-open.svg) no-repeat center center;
+      background: url(../_images/icon-open.svg) no-repeat center center;
       width: 15px;
       height: 8px;
       float: right;
@@ -418,19 +418,19 @@ a:hover, .subhead a:hover {
 
   /* Other Resources */
   .majors-index {
-      background: url(../_images/content/academics-majors/icon-az.svg) no-repeat center center;
+      background: url(../_images/icon-az.svg) no-repeat center center;
   }
 
   .majors-online {
-      background: url(../_images/content/academics-majors/icon-online.svg) no-repeat center center;
+      background: url(../_images/icon-online.svg) no-repeat center center;
   }
 
   .majors-certificates {
-      background: url(../_images/content/academics-majors/icon-certificates.svg) no-repeat center center;
+      background: url(../_images/icon-certificates.svg) no-repeat center center;
   }
 
   .majors-catalog {
-      background: url(../_images/content/academics-majors/icon-catalog.svg) no-repeat center center;
+      background: url(../_images/icon-catalog.svg) no-repeat center center;
   }
 
   .majors-index, .majors-online, .majors-certificates, .majors-catalog {
