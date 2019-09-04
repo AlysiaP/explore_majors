@@ -1,0 +1,107 @@
+/**
+ * Landing pages
+ */
+ 
+ h2.small {
+     font-size: 1.35em;
+ }
+
+
+
+/* About
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.page--about .hero-background {
+    background-image: url(../../_images/banners/about-hero.jpg);
+}
+.s-distinction {
+    background-image: url(../../_images/content/about-university-of-distinction.jpg);
+}
+.s-dfw {
+    background-image: url(../../_images/content/uta-campus-seir.jpg);
+    height: 50vw;
+    min-height: 400px;
+    max-height: 700px;
+}
+
+@media only screen and (max-width: 1126px) {
+    .s-dfw {
+        background-position-y: bottom;
+        background-size: contain;
+        height: auto;
+        padding-bottom: calc(45vw / 700 * 592);
+    }
+}
+
+.s-alumni {
+    padding-bottom: 0;
+}
+
+
+/* Academics
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.page--academics .hero-background {
+    background-image: url(../../_images/banners/academics-hero.jpg);
+}
+.s-education {
+    background-image: url(../../_images/content/academics-education-anywhere.jpg);
+}
+.s-achieve .cards {margin-top: 3em;}
+
+.m-icon-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.m-icon-list img {
+    width: 18px;
+    margin-right: 1em;
+}
+
+.m-icon-list a {
+    color: #2D70EC;
+    text-decoration: none;
+}
+
+.m-icon-list a:hover {
+    color: #5C99FF;
+}
+
+@media only screen and (max-width: 475px) {
+    .s-faculty {
+        padding-bottom: 0px;
+    }
+}
+
+
+/* Student Life
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.page--studentlife .hero-background {
+    background-image: url(../../_images/banners/student-life-hero.jpg);
+}
+
+.page--studentlife .s-veterans .columns:nth-child(1) {
+    float: right;
+}
+
+.page--studentlife .s-veterans .columns:nth-child(2) {
+    float: left;
+    margin-bottom: -3em;
+}
+
+@media all and (min-width: 760px) {
+    .page--studentlife .s-veterans .columns:nth-child(2) {
+        margin-bottom: 0;
+    }
+}
+
+.s-organizations {
+    background-image: url(../../_images/content/student-life-organizations.jpg);
+}
+
+.s-traditions {
+    padding-bottom: 0;
+}
+.s-events {margin-top: 3em;}
+
+
