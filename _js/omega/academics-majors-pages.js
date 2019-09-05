@@ -46,15 +46,7 @@ if(relatedMajors.length >= 1) {
     
     var options = {
         valueNames: [ 'title', 'description', 'degreeLevels', { attr: 'href', name: 'titleLink'}],
-        item: '
-    <li class="swiper-slide">
-        <a class="titleLink">
-            <h3 class="title"></h3>
-        </a>
-        <p class="description"></p>
-        <p class="degreeLevels"></p>
-    </li>'
-    };
+        item: '<li class="swiper-slide"><a class="titleLink"><h3 class="title"></h3></a><p class="description"></p><p class="degreeLevels"></p></li>'};
     
     var userList = new List('related-list', options, tempUserList);
 

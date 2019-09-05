@@ -10,24 +10,12 @@ function createBadges(arrayItem, index, array) {
 }
 
 function wrapWords(str, tmpl) {
-  return str.replace(/\w+/g, tmpl || "
-<span>$&</span>");
+  return str.replace(/\w+/g, tmpl || "<span>$&</span>");
 }
 
 var options = {
     valueNames: [ 'title', 'description', 'degreeLevels', 'schoolName', { data: ['school'] }, { attr: 'href', name: 'titleLink'}],
-    item: '
-<li class="list--list-item" data-school >
-    <a class="titleLink">
-        <h3 class="titleLink title"></h3>
-    </a>
-    <p class="description"></p>
-    <p class="degreeLevels"></p>
-    <div>
-        <span class="college-icon"></span>
-        <span class="schoolName"></span>
-    </div>
-</li>',
+    item: '<li class="list--list-item" data-school ><a class="titleLink"><h3 class="titleLink title"></h3></a><p class="description"></p><p class="degreeLevels"></p><div><span class="college-icon"></span><span class="schoolName"></span></div></li>',
     page: 10,
     pagination: true,
     pagination: [{

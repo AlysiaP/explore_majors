@@ -1,10 +1,5 @@
 var options = {
-    valueNames: [ 'title', { attr: 'href', name: 'titleLink'}],
-    item: '
-<li class="a-z--list-item" >
-    <a class="titleLink title"></a>
-</li>',
-};
+    valueNames: [ 'title', { attr: 'href', name: 'titleLink'}],item: '<li class="a-z--list-item" ><a class="titleLink title"></a></li>',};
 
 var userList = new List('a-z-list', options, majors);
 
@@ -16,10 +11,5 @@ $('#a-z-list').find('li').each(function() {
       firstLetter = text[0];
 
   if (firstLetter != lastLetter) {
-    $this.before('
-<li class="splitter">
-    <h3>' + firstLetter + '</h3>
-</li>');
-    lastLetter = firstLetter;
-  }
+    $this.before('<li class="splitter"><h3>' + firstLetter + '</h3></li>');lastLetter = firstLetter;}
 });
